@@ -1,0 +1,43 @@
+
+<mat-accordion>
+  <mat-expansion-panel (opened)="panelOpenState = true"
+                       (closed)="panelOpenState = false">
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        <mat-icon>shopping_basket </mat-icon>Purchasing</mat-panel-title>
+    </mat-expansion-panel-header>
+    <mat-list>
+      <mat-nav-list *ngFor="let link of links" (click)="select(link)" [ngClass]="{active: isActive(link)}"> <button mat-raised-button >{{link}}</button></mat-nav-list>
+    </mat-list>
+  </mat-expansion-panel>
+  <mat-expansion-panel (opened)="panelOpenState = true"
+                       (closed)="panelOpenState = false">
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        <mat-icon>gradient</mat-icon>Inventory</mat-panel-title>
+    </mat-expansion-panel-header>
+    <mat-list>
+      <mat-nav-list *ngFor="let link of links" (click)="select(link)" [ngClass]="{active: isActive(link)}"> <button mat-raised-button >{{link}}</button></mat-nav-list>
+    </mat-list>
+  </mat-expansion-panel>
+  <mat-expansion-panel (opened)="panelOpenState = true"
+                       (closed)="panelOpenState = false">
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        <mat-icon>settings</mat-icon>Production </mat-panel-title>
+    </mat-expansion-panel-header>
+    <mat-list>
+      <mat-nav-list *ngFor="let link of links" (click)="select(link)" [ngClass]="{active: isActive(link)}"> <button mat-raised-button >{{link}}</button></mat-nav-list>
+    </mat-list>
+  </mat-expansion-panel>
+  <mat-expansion-panel (opened)="panelOpenState = true"
+                       (closed)="panelOpenState = false" >
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        <mat-icon>donut_small</mat-icon>Sales</mat-panel-title>
+    </mat-expansion-panel-header>
+    <mat-list>
+      <mat-nav-list *ngFor="let link of links" (click)="select(link)" [ngClass]="{active: isActive(link)}"> <button mat-raised-button >{{link}}</button></mat-nav-list>
+    </mat-list>
+  </mat-expansion-panel>
+</mat-accordion>
