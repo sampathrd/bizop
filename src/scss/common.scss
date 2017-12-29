@@ -97,7 +97,7 @@ border-bottom: 2px solid darken($bodyColor,5%);
   position: relative;
   color: $menufontColor;
   .logout-image {
-    background-image: url('../img/user.png');
+    background-image: url('../assets/img/user.png');
     background-size: cover;
   }
   .logout-image.mat-card-avatar {
