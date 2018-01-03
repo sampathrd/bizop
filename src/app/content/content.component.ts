@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-content',
@@ -6,10 +6,17 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./content.component.css']
 })
 export class ContentComponent implements OnInit {
+  customerRegist = [
+    "Item master file",
+    "Finished goods prices",
+    "Customer specific special prices and discounts",
 
-  constructor() { }
+  ]
+  constructor() {
+  }
 
   ngOnInit() {
   }
+
 
 }

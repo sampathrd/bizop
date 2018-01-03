@@ -35,7 +35,7 @@ export class LeftMenuComponent implements OnInit {
   isActive(item) {
     return this.selected === item;
   };
-
+  panelOpenState: boolean = false;
   constructor() { }
 
   ngOnInit() {

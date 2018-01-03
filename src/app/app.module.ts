@@ -2,6 +2,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {FlexLayoutModule} from '@angular/flex-layout';
+
 
 import { Routes, RouterModule } from '@angular/router';
 import {  MatAutocompleteModule,
@@ -40,6 +42,8 @@ import { LeftMenuComponent } from './left-menu/left-menu.component';
 import { HeaderComponent } from './header/header.component';
 import { ContentComponent } from './content/content.component';
 import { MainwrapperComponent } from './mainwrapper/mainwrapper.component';
+import { WidgetHeaderButtonCompComponent } from './widget-header-button-comp/widget-header-button-comp.component';
+import { ButtonFooterComponent } from './button-footer/button-footer.component';
 
 const routes : Routes = [
   {path:'' ,component:MainwrapperComponent},
@@ -54,6 +58,9 @@ const routes : Routes = [
     HeaderComponent,
     ContentComponent,
     MainwrapperComponent,
+    WidgetHeaderButtonCompComponent,
+    ButtonFooterComponent,
+
 
   ],
   imports: [
@@ -91,6 +98,7 @@ const routes : Routes = [
     MatToolbarModule,
     MatTooltipModule,
     MatStepperModule,
+    FlexLayoutModule,
 
   ],
   providers: [],
